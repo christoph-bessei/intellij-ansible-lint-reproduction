@@ -1,0 +1,8 @@
+- name: "Install fail2ban"
+  hosts: "all"
+  tasks:
+    - name: "Install fail2ban package"
+      ansible.builtin.apt:
+        update_cache: true
+        name: fail2ban
+        state: present

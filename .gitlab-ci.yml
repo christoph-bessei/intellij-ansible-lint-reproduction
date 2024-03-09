@@ -1,0 +1,6 @@
+build:dummy_job:
+  image:
+    name: base
+    entrypoint: [ "" ]
+  script:
+    - echo "Hello world"
